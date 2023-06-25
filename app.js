@@ -1,14 +1,17 @@
-import e from "express";
-import { routes } from "./routes/user.js";
 import dotEnv from "dotenv";
+import e from "express";
+import { routes } from "./routes/userRoutes.js";
+import { connectDB } from "./database/connectDB.js";
 
 dotEnv.config();
 
 const app = e();
 const PORT = process.env.PORT || 9000;
 
-app.use("/api/v1", routes)
+connectDB();
+
+app.use("/api/v1", routes);
 
 app.listen(PORT, () => {
-    console.log(`Server running: http://localhost:${PORT}/api/v1`)
-})
+    console.log(`Server running: http://localhost:${PORT}/api/v1`);
+});
