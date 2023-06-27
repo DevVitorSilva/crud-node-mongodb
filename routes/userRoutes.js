@@ -57,6 +57,24 @@ routes.put("/update", e.json(), async (req, res) => {
 
 });
 
+routes.delete("/delete", e.json(), async (req, res) => {
+    const { id } = req.body;
+
+    if(!id){
+        return res.status(400).json({message: "Enter the id"});
+    }
+
+    try {
+        const userDelete = await User.findByIdAndDelete(id);
+        res.status(200).json({ userDelete });
+        
+    } catch (err) {
+        console.log(`Delete user error => ${err}`);
+        res.status(500).json({ message: "Internal server error" });
+    }
+    
+});
+
 export{
     routes
 }
