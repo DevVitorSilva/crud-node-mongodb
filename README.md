@@ -24,7 +24,7 @@
 
 5. digite o seguinte comando no terminal ```npm update```, este comando atualizará todos os pacotes listados para a versão mais recente.
 
-6. ainda no terminal digite ```npm start```, se tudo ocorrer bem irá aparecer a mensagem **Server running**, caso contrário irá aparecer um erro, se a conexão com o mongo for estabelecida a irá aparecer a mensagem **Connected to database**, caso contrário a mensagem será **db connection error**.
+6. ainda no terminal digite ```npm start```, se tudo ocorrer bem irá aparecer a mensagem **Server running**, caso contrário irá aparecer um erro, se a conexão com o mongo for estabelecida irá aparecer a mensagem **Connected to database**, caso contrário a mensagem será **db connection error**.
 
 7. abra o insomnia para acessar as rotas da api.
 
