@@ -4,7 +4,7 @@
   "description": "CRUD node com mongoDB.",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "DevVitorSilva",
   "license": "ISC",
