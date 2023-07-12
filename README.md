@@ -22,7 +22,7 @@
 
 4. abra o terminal integrado do vscode ou um terminal externo, se caso deseje usar o terminal externo lembre-se de que deve estar no repositório do projeto clonado.
 
-5. digite o seguinte comando no terminal ```npm install``` para instalar as dependências do projeto, em segui digite ```npm update``` este comando atualizará todos os pacotes listados para a versão mais recente.
+5. digite o seguinte comando no terminal ```npm install``` para instalar as dependências do projeto, em seguida digite ```npm update``` este comando atualizará todos os pacotes listados para a versão mais recente.
 
 6. ainda no terminal digite ```npm start```, se tudo ocorrer bem irá aparecer a mensagem **Server running**, caso contrário irá aparecer um erro, se a conexão com o mongo for estabelecida irá aparecer a mensagem **Connected to database**, caso contrário a mensagem será **db connection error**.
 
